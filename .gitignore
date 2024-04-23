@@ -1,0 +1,5 @@
+*.ini
+*.log
+*.bat
+*.iml
+.idea/
