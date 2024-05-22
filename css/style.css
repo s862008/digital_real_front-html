@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Lato SemiBold';
+    src: url('font/Lato SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    src: url('font/Lato Light.woff2') format('woff2');
+}
+
+body {
+    margin: 0;
+    color: #999;
+    font-size: 16px;
+    font-family: 'Lato Light', sans-serif;
+    line-height: 1.80857;
+}
+
+
+
