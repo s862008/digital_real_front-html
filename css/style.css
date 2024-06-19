@@ -7,6 +7,17 @@
     font-family: 'Lato Light';
     src: url('font/Lato Light.woff2') format('woff2');
 }
+h1, .h1 {
+    font-size: calc(1.03rem + 1.02vw);
+    /*line-height: 1.2;*/
+    font-weight: 530;
+    color:#000000;
+    text-align:left;
+    vertical-align:text-top;
+    border-style:hidden;
+    outline:none;
+    width:526px;
+}
 
 body {
     margin: 0;
@@ -14,7 +25,171 @@ body {
     font-size: 16px;
     font-family: 'Lato Light', sans-serif;
     line-height: 1.80857;
+    overflow-wrap: normal;
+}
+.header{
+    height: 265px;
+    border: 1px solid red;
+
 }
 
+.title-header{
+    padding: 79px 10px 10px 116px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center ;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.title-header > h1{
+    width: 80%;
+    height: 35%;
+
+}
+.logo{
+    width: 8%;
+}
+
+.local{
+    padding: 10px;
+    width: 10%;
+
+}
+.local>.local-toogle{
+    font-family: 'Lato Light', sans-serif;
+    text-decoration: none;
+    color:#18454a;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:24px;
+    border-style:hidden;
+    outline:none;
+    width:102px;
 
 
+}
+.header-spacer {
+    flex: 1 1 auto;
+}
+
+.nav-header{
+    padding: 0px 10px 0px 247px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    line-height: 2.1;
+}
+.place-add{
+    margin-left: 220px;
+}
+.personal{
+    margin-left: 40px;
+    padding-left: 45px;
+}
+
+.title-menu{
+    padding: 0 0;
+    width: 37.50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: end;
+}
+.nav-a{
+    color:#8c8c8c;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:24px;
+    width:149px;
+    text-decoration: none;
+
+}
+.nav-a>span{
+    border: 2px solid #8c8c8c;
+    font-size:28px;
+}
+.home{
+   padding-top:270px;
+}
+.banner{
+    position: relative;
+    background-color:#032f30;
+    height:1028px;
+    width:100%;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+}
+
+.banner--small{
+    height: 19rem;
+}
+
+.img-banner{
+    background-image: url("/img/фото ЖК (сменное до 5 шт).png");
+    height:1096px;
+    width:1126px;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+    border-radius:15px;
+    border: 0;
+    top:-30px;
+    left: -5px;
+    position:absolute;
+    margin: 0;
+}
+.text-part-banner{
+    position: relative;
+    height:79%;
+    width:59%;
+    top: 19%;
+    left: 17%;
+    margin: auto;
+    /*z-index: 999;*/
+}
+.title-banner{
+    padding-left: 60px;
+    width:100%;
+    background-color:#ffffff;
+    height:113px;
+    border-radius:15px;
+    color:#032f30;
+    font-size:90px;
+    border-style:hidden;
+    outline:none;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.info-banner{
+    position: relative;
+    padding-top: 35px;
+    padding-left: 43%;
+    height:200px;
+    color:#ffffff;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:45px;
+    border-style:hidden;
+    outline:none;
+    line-height: 1.2;
+}
+.smart-part{
+    margin-top: 16.5rem;
+    margin-left: 38rem;
+    width: 433px;
+}
+.smart-part > button{
+    color:#032f30;
+    text-align:center;
+    vertical-align:text-top;
+    font-size:35px;
+    background-color:#efeccb;
+    height:78px;
+    width:433px;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+    border-radius:15px}
+.info-smart{
+    margin-top: 20px;
+    line-height: 1.3;
+    color:#ffffff;
+    text-align:center;
+    vertical-align:text-top;
+    font-size:25px;
+}

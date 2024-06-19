@@ -1,0 +1,11 @@
+.form-param{
+    position: relative;
+    top: -100px;
+    border-radius: 25px 25px 0 0;
+    box-shadow: inset 3px 4px 4px 0 rgba(0, 0, 0, 0.25), 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    background: #fff;
+    /*width: 2104px;*/
+    height: 415rem;
+    scroll-behavior: auto;
+    padding: 3rem 5rem 3rem 5rem;
+}
