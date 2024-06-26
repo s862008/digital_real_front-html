@@ -20,12 +20,14 @@ h1, .h1 {
 }
 
 body {
-    margin: 0;
     color: #999;
     font-size: 16px;
     font-family: 'Lato Light', sans-serif;
-    line-height: 1.80857;
+    line-height: 1.8;
     overflow-wrap: normal;
+    padding: 0;
+    margin: 0;
+
 }
 
 .header {
@@ -33,8 +35,36 @@ body {
     overflow: hidden;
 }
 
+/* ----------  shared styles ---------------*/
+
+.my-input-lg {
+    font-size: 1.4rem;
+    background-color: #fffdfd;
+    height: 71px;
+    width: 47%;
+    border-radius: 10px;
+    border: 1px solid #999999;
+    padding-left: 20px;
+}
+
+.vertical-center{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+main{
+    min-height: 3500px;
+}
+
+
+/* ------------ HOME --------------*/
+
 .home {
-    /*min-height: 3200px;*/
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 65px;
 }
 .home  .banner, .prepear-search  {
     margin-top: 9%;
@@ -114,7 +144,7 @@ body {
 
 .nav-header {
     margin-top: 20px;
-    padding: 5px 10px 0px 241px;
+    padding: 5px 10px 0 241px;
     display: flex;
     flex-flow: row wrap;
     justify-content: start;
@@ -152,37 +182,15 @@ body {
     border: 2px solid #8c8c8c;
     font-size: 28px;
 }
-/* ----------  shared styles ---------------*/
 
-.my-input-lg {
-    font-size: 1.4rem;
-    background-color: #fffdfd;
-    height: 71px;
-    width: 47%;
-    border-radius: 10px;
-    border: 1px solid #999999;
-    padding-left: 20px;
-}
 
-.vertical-center{
-    margin: 0;
-    position: relative;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-/* ------------ HOME --------------*/
-.home {
-    padding-top: 65px;
-}
 .banner {
     background-color: #032f30;
     height: 1028px;
     width: 100%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin-bottom: 40px;
-    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
     background-color:rgba(233.00000131130219, 234.00000125169754, 238.00000101327896, 1);
     background-image:linear-gradient(0deg, rgba(23.000000528991222, 68.00000354647636, 73.00000324845314, 1) 0%,rgba(37.30096064507961, 110.28110235929489, 118.39000403881073, 1) 56.23987317085266%,rgba(39.068496599793434, 115.50685554742813, 124.00000780820847, 1) 62.07455396652222%,rgba(40.996714532375336, 121.20767444372177, 130.12000501155853, 1) 67.90924072265625%,rgba(55.13698697090149, 163.0136999487877, 175.00000476837158, 1) 100%) ;
 }
@@ -233,7 +241,7 @@ body {
     outline: none;
     /*font-weight: 1000;*/
     line-height: 1.2;
-    font-family: 'Lato SemiBold';
+    font-family: 'Lato SemiBold', sans-serif;
 }
 
 .info-banner {
@@ -245,7 +253,7 @@ body {
     font-size:46px;
     letter-spacing:0;
     line-height: 1.15;
-    font-family: 'Lato Light';
+    font-family: 'Lato Light',sans-serif;
 }
 
 .smart-part {
@@ -264,7 +272,8 @@ body {
     width: 433px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 15px;
-    font-family: 'Lato SemiBold';
+    font-family: 'Lato SemiBold',sans-serif;
+    cursor: pointer;
 }
 
 .info-smart {
@@ -279,7 +288,7 @@ body {
 /*  - ----prepear-search---- - */
 
 .prepear-search {
-    padding-left: 90px;
+    padding-left: 100px;
 }
 
 .filter-side {
@@ -287,6 +296,7 @@ body {
 }
 
 .title-section {
+    font-family: 'Lato SemiBold',sans-serif;
     color: #000000;
     /*text-align:left;*/
     /*vertical-align:text-top;*/
@@ -314,7 +324,8 @@ body {
     font-size: 24px;
 }
 
-.block-filter p {
+.block-filter> label {
+    display: block;
     color: #000000;
     text-align: left;
     vertical-align: text-top;
@@ -361,10 +372,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     align-content: center;
-    border-radius: 5px;
-    border-top-right-radius: 5px !important;
-    border-bottom-right-radius: 5px !important;
-
+    border-radius: 5px !important;
 }
 
 #btnradio1 + label, #btnradio6 + label {
@@ -589,7 +597,7 @@ body {
     font-size:35px;
     line-height: 1.2;
     width:940px;
-    font-family: "Lato Light";
+    font-family: "Lato Light",sans-serif;
     font-weight: lighter;
     letter-spacing:0.08rem
 }
@@ -654,7 +662,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 0 4px rgba(0, 0, 0, 0.25);
     background-color: rgba(255, 255, 255, 1);
     width: 688px;
     height: 276px;

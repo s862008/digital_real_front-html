@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
 <!-- Basic -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,6 +35,7 @@
 
 <main class="home">
     <section class="banner">
+        <img class="banner-back-logo" src="./img/РРА 4.png" alt="back-logo">
         <div class="container-fluid">
             <div class="row">
 
@@ -47,7 +48,7 @@
                         квартира в новостройке напрямую от застройщика <br> в Воронеже
                     </div>
                     <div class="smart-part">
-                        <button class="btn">SMART-ПОДБОР</button>
+                        <button>SMART-ПОДБОР</button>
                         <div class="info-smart">
                             умный поиск для более точного подбора недвижимости
                         </div>
@@ -58,7 +59,7 @@
         </div>
 
     </div>
-        <img class="banner-back-logo" src="./img/РРА 4.png" alt="back-logo">
+
     </section>
 
     <section class="prepear-search">
@@ -69,8 +70,8 @@
                 <p> Выберите квартиру <br>в новостройках Воронежa</p>
                 <div class="blocks-filter">
                     <div class="block-filter">
-                        <p> Количество комнат</p>
-                        <div class="btn-group my-btn-lg" role="group" aria-label="Группа кнопок по умолчанию">
+                        <label for="cnt-room-input"> Количество комнат</label>
+                        <div class="btn-group my-btn-lg" id="cnt-room-input" role="group" aria-label="Группа кнопок по умолчанию">
 
                             <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
                                    autocomplete="off">
@@ -98,22 +99,23 @@
 
                     </div>
                     <div class="block-filter">
-                        <p> Цена, руб. </p>
-                        <div class="cost block-inputs">
-                            <input type="text" class="d-block my-input-lg" placeholder="от">
+                        <label for="cost-input"> Цена, руб. </label>
+                        <div class="cost block-inputs" >
+                            <input type="text" class="d-block my-input-lg" id="cost-input" placeholder="от">
 
                             <input type="text" class="d-block my-input-lg" placeholder="до">
 
                         </div>
                     </div>
                     <div class="block-filter">
-                        <p> Площадь, м </p>
+                        <label for="area-input"> Площадь, м </label>
                         <div class="area block-inputs">
-                            <input type="text" class="d-block my-input-lg" placeholder="от">
+                            <input type="text" id="area-input" class="d-block my-input-lg" placeholder="от">
 
                             <input type="text" class="d-block my-input-lg" placeholder="до">
 
                         </div>
+
                     </div>
                 </div>
                 <div class="extended-filter">
@@ -127,7 +129,7 @@
                             <div class="card card-body brdr">
 
                                 <div class="img_section">
-                                    <div class="title_img title="стел жк">
+                                    <div class="title_img" title="стел">
                                         <button class="bageSoon">
                                             Скоро! {{e}}
                                         </button>
