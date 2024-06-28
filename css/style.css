@@ -7,7 +7,15 @@
     font-family: 'Lato Light';
     src: url('../font/Lato Light.woff2') format('woff2');
 }
+html {
+    box-sizing: border-box;
+}
 
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
 h1, .h1 {
     font-size: calc(1.03rem + 1.02vw);
     font-weight: 530;
@@ -203,8 +211,21 @@ main{
     top: 10%;
 }
 
+.banner-inner{
+}
+
 .banner--small {
-    height: 19rem;
+
+    height: 31rem;
+
+}
+
+.info-banner--small{
+
+    padding-top: 10%;
+    color: white;
+    width: 50vh;
+    font-size: 35px;
 }
 
 .img-banner {
