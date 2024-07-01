@@ -26,6 +26,10 @@ h1, .h1 {
     outline: none;
     width: 526px;
 }
+img {
+    width: 100%;
+    max-width: 100%;
+}
 
 body {
     color: #999;
@@ -131,7 +135,10 @@ main{
 
 .local {
     padding: 10px;
-    width: 10%;
+}
+.local img{
+    width:18px;
+    height: 25px;
 }
 
 .local > .local-toogle {
@@ -206,8 +213,8 @@ main{
 .banner-back-logo{
     position: absolute;
     right: 0;
-    /*height: 890px;*/
-    /*width:800px;*/
+    height: 890px;
+    width:  800px;
     top: 10%;
 }
 
@@ -652,6 +659,31 @@ main{
     font-size: 2.8rem;
 
 }
+.filter-section_header{
+    margin: 0 auto;
+    max-width: 85%;
+    padding-top: 5px;
+}
+.filter-section_header .row:nth-child(2){
+    margin-top: 12vh;
+}
+.filter-section_header .block-filter {
+    transform: scale(1.2);
+}
+.filter-section_header .col-md-4 .block-filter{
+    margin-left: 2vh;
+    margin-right: 0;
+}
+.filter-section_header .col-md-3 .block-filter{
+    margin-left: 7vh;
+    margin-right: 0;
+}
+
+
+
+
+
+
 
 
 /*  -         ----footer----         - */
