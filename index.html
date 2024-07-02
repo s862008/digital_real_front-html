@@ -1,37 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Basic -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<!-- Mobile Metas -->
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<!-- Site Metas -->
-<title>GoodWEB Solutions - Responsive HTML5 Landing Page Template</title>
-<meta name="keywords" content="">
-<!--<base href="/digital_real_front/">-->
-<meta name="description" content="">
-<meta name="author" content="">
+    <!-- Site Metas -->
+    <title>GoodWEB Solutions - Responsive HTML5 Landing Page Template</title>
+    <meta name="keywords" content="">
+    <!--<base href="/digital_real_front/">-->
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<!-- Site Icons -->
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
 
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<!-- Site CSS -->
-<link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 <body>
-<iframe src="header.html" width="100%" height="300px"></iframe>
+<iframe src="header.html" width="100%" id="myIframe"></iframe>
+
+    <div class="dropdown">
+        <a class="newbuild nav-a dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Пример меню списка
+        </a>
+
+        <div class="dropdown-menu _dropdown-menu">
+            <div class="row">
+                <div class="col-2">
+                    <ul class="menu-item">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="menu-item">
+                        <li><a class="dropdown-item " href="#">Действие</a></li>
+                        <li><a class="dropdown-item " href="#">Действие</a></li>
+                        <li><a class="dropdown-item " href="#">Действие</a></li>
+                        <li><a class="dropdown-item " href="#">Действие</a></li>
+                        <li><a class="dropdown-item " href="#">Действие</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="menu-item">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--<script>-->
+<!--    document.querySelectorAll('.nav-a').forEach( function(item) {-->
+<!--        item.addEventListener('mouseover', function() {-->
+<!--            const iframe = document.getElementById("myIframe");-->
+<!--            iframe.height = "500px";-->
+<!--            console.log("eee")-->
+<!--        })-->
+<!--    });-->
+<!--</script>-->
 
 <main class="home">
     <section class="banner">
@@ -56,9 +103,9 @@
 
                 </div>
 
-        </div>
+            </div>
 
-    </div>
+        </div>
 
     </section>
 
@@ -71,7 +118,8 @@
                 <div class="blocks-filter">
                     <div class="block-filter">
                         <label for="cnt-room-input"> Количество комнат</label>
-                        <div class="btn-group my-btn-lg" id="cnt-room-input" role="group" aria-label="Группа кнопок по умолчанию">
+                        <div class="btn-group my-btn-lg" id="cnt-room-input" role="group"
+                             aria-label="Группа кнопок по умолчанию">
 
                             <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
                                    autocomplete="off">
@@ -100,7 +148,7 @@
                     </div>
                     <div class="block-filter">
                         <label for="cost-input"> Цена, руб. </label>
-                        <div class="cost block-inputs" >
+                        <div class="cost block-inputs">
                             <input type="text" class="d-block my-input-lg" id="cost-input" placeholder="от">
 
                             <input type="text" class="d-block my-input-lg" placeholder="до">
@@ -304,7 +352,7 @@
                         <div class="col-lg-6"></div>
                         <div class="col-lg-6">
                             <h2 class="header-form"> Подберите себе квартиру на сайте </h2>
- <p>или оставьте заявку, чтобы получить больше вариантов напрямую от застройщика!</p>
+                            <p>или оставьте заявку, чтобы получить больше вариантов напрямую от застройщика!</p>
                         </div>
                     </div>
                     <div class="row">
@@ -318,13 +366,14 @@
                         </div>
                         <div class="col-lg-12">
                             <div class="button-wanted">
-                               <div class="vertical-center"> ХОЧУ КВАРТИРУ ЗДЕСЬ!</div>
+                                <div class="vertical-center"> ХОЧУ КВАРТИРУ ЗДЕСЬ!</div>
                             </div>
                         </div>
 
                     </div>
                     <div class="row text-center my-3">
-                        <p class="vertical-center">Нажимая на кнопку, вы принимаете политику конфиденциальности и даете согласие на обработку персональных данных.</p>
+                        <p class="vertical-center">Нажимая на кнопку, вы принимаете политику конфиденциальности и даете
+                            согласие на обработку персональных данных.</p>
                     </div>
 
                 </div>

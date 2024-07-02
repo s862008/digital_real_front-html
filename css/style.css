@@ -43,7 +43,7 @@ body {
 }
 
 .header {
-    height: auto;
+    height: 300px;
     overflow: hidden;
 }
 
@@ -663,6 +663,7 @@ main{
     margin: 0 auto;
     max-width: 85%;
     padding-top: 5px;
+
 }
 .filter-section_header .row:nth-child(2){
     margin-top: 12vh;
@@ -777,4 +778,26 @@ footer {
     font-family: 'Lato Light', serif;
     font-weight: 200;
     font-size: 25px;
+}
+
+._dropdown-menu{
+    width: 1200px;
+    position: absolute;
+}
+
+.submenu {
+    padding: 10px 200px 10px 200px;
+    display: none;
+    position: absolute;
+    width: calc(100% - 20px);
+    z-index: 99;
+    border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-a:hover .submenu {
+    display: block;
+    left: 0;
+}
+iframe{
+   min-height: 450px;
 }
