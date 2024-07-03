@@ -78,14 +78,13 @@ main{
     margin: 0 auto;
     padding-top: 65px;
 }
-.home  .banner, .prepear-search  {
+.prepear-search  {
     margin-top: 9%;
     margin-bottom: 10%;
     block-size: border-box;
 }
 
-.home .send-section{
-
+.send-section{
     top: -50px;
     margin-bottom: 0;
 }
