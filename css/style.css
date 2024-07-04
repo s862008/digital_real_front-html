@@ -491,19 +491,19 @@ main{
 }
 
 .img_section {
-    margin: -15px -15px 69px -15px;
+    /*margin: -15px -15px 69px -15px;*/
     height: 466px;
 }
 
 .title_img {
     background-image: url("../img/стел жк 7.png");
-
     border-radius: 30px 30px 120px 0;
-    width: 468px;
-    height: 100%;
+    background-position: top center;
     background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
     position: relative;
-
 }
 
 .title_img-small {
@@ -547,7 +547,6 @@ main{
     background-color: #5f77ec;
     display: inline;
     padding: 1px;
-    margin: 0;
     line-height: 0.5;
 
 }
@@ -557,8 +556,10 @@ main{
 }
 
 .info_section {
+    padding: 70px 50px 70px 50px;
     position: relative;
     margin-left: 30px;
+    line-height: 5.5vh;
 }
 
 .info_section > div:nth-child(n+2) {
@@ -688,6 +689,7 @@ main{
     width: 1769px;
     height: 1996px;
     background: rgba(23, 68, 73, 0.05);
+    padding: 50px;
 }
 .filter-section_header .row:nth-child(1){
     padding-left: 10vh;
@@ -742,9 +744,75 @@ main{
     font-size: 24px;
     color: #000;
 }
+.filter-banner{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    height: 489px;
+    border-radius: 30px 30px 30px 0;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #fff;
+}
+.filter-banner .info_section> div{
+    transform: scale(2);
+}
+.filter-banner .info_section{
+    left:400px;
+}
+.filter-banner .info_section div:nth-of-type(3){
+    margin-top:-5% ;
+}
+.filter-banner .info_section div:nth-of-type(4){
+    font-weight: 600;
+    font-size: 25px;
+    color: #174246;
+    margin-top:14vh ;
+}
 
+.result-search__items{
+    margin-top:  12vh;
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+    grid-row-gap: 200px;
+}
+.result-search__item{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    mix-height: 300px;
+}
+.r-item-img{
+    text-align: center;
+    /*width: 30%;*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.50px solid #999;
+    border-radius: 5px;
+    width: 258px;
+    height: 298px;
+    background: #fffefe;
+}
+.r-item-img img{
 
+    max-height: 300px;
+    max-width: 100px;
 
+}
+.r-item-info{
+    width: 55%;
+}
+.r-item__categories p{
+   flex-flow: row wrap;
+    justify-content: space-between;
+}
+.r-item__categories p span{
+    text-align: left;
+    min-width: 40%;
+}
 /*  -         ----footer----         - */
 
 
