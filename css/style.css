@@ -45,10 +45,6 @@ body {
 
 }
 
-.header {
-    height: 300px;
-    overflow: hidden;
-}
 
 /* ----------  shared styles ---------------*/
 
@@ -77,6 +73,13 @@ main {
 
 /* ------------ HOME --------------*/
 
+.header {
+    height: 300px;
+    overflow: hidden;
+}
+.filter-page{
+    overflow: hidden;
+}
 .home {
     max-width: 1920px;
     margin: 0 auto;
@@ -229,11 +232,11 @@ main {
 }
 
 .banner-inner {
+    padding: 100px 100px;
 }
 
 .banner--small {
-
-    height: 31rem;
+  max-height: 31rem;
 
 }
 
@@ -259,11 +262,11 @@ main {
 }
 
 .text-part-banner {
-    position: absolute;
+    position: relative;
     height: 79%;
     width: 59%;
-    top: 19%;
-    left: 37%;
+    /*top: 19%;*/
+    /*left: 37%;*/
     margin: auto;
 }
 
@@ -754,8 +757,8 @@ main {
 }
 
 .banner--small .banner-back-logo {
-    height: auto;
-    width: 40vh;
+    height: 87%;
+    width: 21%;
 }
 
 ._show {
@@ -813,7 +816,7 @@ main {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 130px 100px;
+    grid-gap: 115px 110px;
 
 }
 
@@ -853,8 +856,22 @@ main {
     font-weight: 500;
     font-size: 36px;
     color: #000;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
-
+.price{
+    margin-bottom: 0px;
+    line-height: 90%;
+}
+.price-squad{
+    font-family: 'Lato SemiBold', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+.price-squad::after{
+    content: 'p/m2';
+    color: black;
+}
 .r-item__type-build, .r-item__address, .r-item__categories.price-squad {
     font-family: 'Lato SemiBold', sans-serif;
     font-weight: 400;
@@ -865,7 +882,7 @@ main {
 
 
 .r-item__categories {
-    margin-top: 20px;
+    margin-top: 10px;
     display: grid;
     grid-template-columns: 300px auto;
     line-height: 100%;
@@ -1047,6 +1064,7 @@ footer {
 iframe {
     min-height: 450px;
 }
+
 
 /*  Стиль для больших экранов (от 1900px и выше)  */
 @media (min-width: 1901px) {
