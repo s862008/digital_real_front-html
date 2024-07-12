@@ -262,16 +262,17 @@ main {
 }
 
 .text-part-banner {
-    position: relative;
+    position: absolute;
     height: 79%;
-    width: 59%;
-    /*top: 19%;*/
-    /*left: 37%;*/
+    width: min(1024px,55%);
+    top: 19%;
+    left: 37%;
     margin: auto;
 }
 
 .title-banner {
-    padding-left: 65px;
+
+    padding-left: 70px;
     width: 100%;
     background-color: #ffffff;
     min-height: 113px;
