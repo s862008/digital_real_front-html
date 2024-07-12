@@ -11,22 +11,31 @@
 html {
     box-sizing: border-box;
 }
+:root {
+    --font-family: 'Lato Light', sans-serif;
+    --font-family-bold: 'Lato SemiBold', sans-serif;
+
+}
+
 
 *,
 *::after,
 *::before {
     box-sizing: inherit;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
 h1, .h1 {
-    font-size: calc(1.03rem + 1.02vw);
-    font-weight: 530;
-    color: #000000;
-    text-align: left;
-    vertical-align: text-top;
-    border-style: hidden;
-    outline: none;
-    width: 526px;
+    /*font-size: calc(1.03rem + 1.02vw);*/
+    /*font-weight: 530;*/
+    /*color: #000000;*/
+    /*text-align: left;*/
+    /*vertical-align: text-top;*/
+    /*border-style: hidden;*/
+    /*outline: none;*/
 }
 
 img {
@@ -64,6 +73,25 @@ body {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+.title{
+
+
+
+}
+
+
+.title--h1{
+    font-weight: 600;
+    font-size: 45px;
+    color: #000;
+    font-family: 'Lato SemiBold';
+}
+.link--base{
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 24px;
+    color: #106681;
 }
 
 main {
@@ -1076,7 +1104,7 @@ iframe {
 }
 
 /*  Стиль для средних экранов (от 1024px до 1900px)  */
-@media (max-width: 1900px) and (min-width: 1201px) {
+@media (max-width: 1890px) and (min-width: 1201px) {
     .filter-side, .cards-side {
         width: 100%;
         height: auto;

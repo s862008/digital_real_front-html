@@ -1,11 +1,51 @@
 .form-param{
     position: relative;
-    top: -100px;
+    top: -450px;
     border-radius: 25px 25px 0 0;
     box-shadow: inset 3px 4px 4px 0 rgba(0, 0, 0, 0.25), 0 0 4px 0 rgba(0, 0, 0, 0.25);
     background: #fff;
-    /*width: 2104px;*/
+    max-width: 1790px;
+    margin: 0 auto;
     height: 415rem;
     scroll-behavior: auto;
-    padding: 3rem 5rem 3rem 5rem;
+    padding: 5rem 5rem 3rem 5rem;
+}
+.form-param__choosed{
+    height: 450px;
+}
+
+.form__close{
+    position: relative;
+    top: -45px;
+    right: -87px;
+    font-size: 39px;
+}
+.fp-choosed{
+    padding-top: 5.2rem;
+}
+.fp-choosed--temp{
+    height: 90%;
+}
+.fp-choosed__item{
+    font-weight: 300;
+    font-size: 30px;
+    color: #000;
+
+}
+.fp-choosed__item span{
+    padding-right: 15px;
+}
+.form-param__filter, .fp-filter{
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+
+.fp-filter__title{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 50px;
+    color: #000;
+    width: 100%;
 }
