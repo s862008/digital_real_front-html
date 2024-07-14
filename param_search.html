@@ -20,7 +20,9 @@
             <div class="form-param__title">
                 <div class="row row-cols-2">
                     <div class="col-11"><h1 class="title--h1">ПРИМЕНЕНИЕ УМНОГО ФИЛЬТРА</h1></div>
-                    <div class="col-1"><button type="button" class="form__close btn-close" aria-label="Закрыть"></button></div>
+                    <div class="col-1">
+                        <button type="button" class="form__close btn-close" aria-label="Закрыть"></button>
+                    </div>
                 </div>
             </div>
             <div class="form-param__choosed">
@@ -39,8 +41,53 @@
             </div>
             <hr>
             <div class="form-param__filter fp-filter">
-              <div class="fp-filter__title">   ВСЕ ФИЛЬТРЫ</div>
+                <h2 class="fp-filter__title title--h2">ВСЕ ФИЛЬТРЫ</h2>
+                <div class="fp-filter__items">
 
+                    <div class="fp-filter__item fp-common-item">
+                        <h3 class="fp-filter-item__title title--h3" data-bs-toggle="collapse"
+                            data-bs-target="#collapseCommon" aria-expanded="true" aria-controls="collapseCommon">
+                            Общие
+                            <svg width="19" height="12" viewBox="0 0 19 12" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5.25 5.5L9.5 10L13.75 5.5L18 1" stroke="black" stroke-width="2.5"/>
+                            </svg>
+                        </h3>
+                        <div class="collapse collapse-horizontal show" id="collapseCommon">
+                            <div class="fp-filter-item__inner">
+                                <div class="fp-common-item__type-build">
+                                    <h4 class="title--h4">Тип жилья</h4>
+                                    <div class="slider"></div>
+                                    <label class="fp-label">
+                                        <input class="fp-label--input" type="checkbox" name="" id="">
+                                        <span class="fp-label--tx">Квартира</span>
+                                    </label>
+                                    <label class="fp-label">
+                                        <input class="fp-label--input" type="checkbox" name="" id="">
+                                        <span class="lbl-tx --sm">Апартаменты</span>
+                                    </label>
+
+                                </div>
+                                <div class="fp-common-item__planner">
+                                    <h4 class="title--h4">Планировка</h4></div>
+
+                                <div class="fp-common-item__roof">
+                                    <h4 class="title--h4">Этаж</h4></div>
+
+                                <div class="fp-common-item__smart-block">
+                                    <h4 class="title--h4">Этажей в доме</h4></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fp-filter__item"></div>
+                    <div class="fp-filter__item"></div>
+                    <div class="fp-filter__item"></div>
+                    <div class="fp-filter__item"></div>
+                    <div class="fp-filter__item"></div>
+                    <div class="fp-filter__item"></div>
+                </div>
 
             </div>
 
@@ -49,4 +96,7 @@
     </div>
 </main>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </html>

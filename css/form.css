@@ -38,14 +38,36 @@
 .form-param__filter, .fp-filter{
     display: flex;
     flex-flow: column nowrap;
+margin-top: 30px;
+}
+
+.fp-filter__title{
+    width: 100%;
+    /*margin-bottom: 37px;*/
+}
+
+.fp-filter__items{
+
+}
+.fp-filter__item{
 
 }
 
+.fp-filter-item__title{
+    cursor: pointer;
+    padding:   33px 0 48px;
+}
 
-.fp-filter__title{
+
+.fp-filter-item__inner{
+
+    display: grid;
+    grid-template-columns: 54vh 54vh 50vh auto;
+    grid-gap: 11vh;
+}
+.fp-label--tx {
     font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 50px;
-    color: #000;
-    width: 100%;
+    font-weight: 300;
+    font-size: 24px;
+    color: #000
 }
