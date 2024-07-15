@@ -151,7 +151,7 @@ main {
 .prepear-search {
     margin-top: 10%;
     margin-bottom: 10%;
-    block-size: border-box;
+    padding: 0 40px 0 100px;
 }
 
 .send-section {
@@ -390,9 +390,7 @@ main {
 
 /*  - ----prepear-search---- - */
 
-.prepear-search {
-    padding-left: 100px;
-}
+
 
 .filter-side {
     height: 1000px;
@@ -530,7 +528,7 @@ main {
 
 
 .cards-side {
-    padding: 30px 90px 10px 120px;
+    padding: 30px 0 0 30px;
     height: 970px;
     display: flex;
     flex-direction: column;
@@ -539,17 +537,24 @@ main {
 
 .cards {
     position: relative;
-
+    flex:2;
+    max-width: 50vw;
+margin: 0 auto;
 }
 .cards__slider{
     position: relative;
     height: 762px;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
 }
 .prev-slide,.next-slide{
-   cursor: pointer;
+    flex: 1;
+    max-width: 60px;
+    cursor: pointer;
     height: 56px;
     width: 59px;
     border-radius: 50px;
@@ -557,18 +562,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-.slider-btn{
-    position: absolute;
-    height: 100%;
-    width: 59vw;
-    left: -4vw;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    transform: translateY(50%);
 }
 
 
@@ -745,18 +738,30 @@ main {
     grid-template-columns: 50% 50%;
     grid-row-gap: 10px;
 }
+.card__show-button{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-content: flex-end;
+    padding: 0px 90px;
+    flex:1
+}
+
+
 
 .show-button {
+    padding: 0 10px;
     background-color: #18454a;
     height: 60px;
-    width: 502px;
+    max-width: 600px;
     border-radius: 15px;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 28px;
     border-style: hidden;
     outline: none;
     lighting-color: white;
-
+    font-weight: 600;
+font-family: var(--font-family);
 }
 
 .show-button:hover {
@@ -1122,24 +1127,6 @@ footer {
     line-height: 3.4rem;
 }
 
-.footer_geo {
-    background-color: #efeccb;
-    border-radius: 30px;
-    width: 177px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-top: 50px;
-    margin-left: 70px;
-}
-
-.footer_geo_location {
-    font-weight: 700;
-    font-size: 24px;
-    color: #18454a;
-}
 
 .tx-footer {
     font-family: 'Lato Light', serif;
@@ -1151,6 +1138,70 @@ footer {
     font-family: 'Lato Light', serif;
     font-weight: 200;
     font-size: 25px;
+}
+
+.footer_white_wrapper_logo {
+    position: absolute;
+    top: -6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 247px;
+    height: 232px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.5);
+}
+.footer_white_wrapper_logo_logo {
+    width: 235px;
+    height: 187px;
+}
+
+.footer_geo {
+    background-color: #efeccb;
+    border-radius: 25px;
+    width: 170px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 68px;
+}
+.footer_geo img{
+    width: auto;
+    max-height: 50px;
+}
+.footer_geo_location {
+    font-weight: 700;
+    font-size: 24px;
+    color: #18454a;
+}
+.footer_text_position {
+    margin-top: 27px;
+    margin-left: 290px;
+}
+.footer_text_main {
+    font-weight: 900;
+    font-size: 35px;
+    color: white;
+}
+.footer_text_sub {
+    margin-top: 14px;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+}
+.footer_text_flex_left {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+    margin-top: 50px;
+}
+.footer_text_flex_left a {
+    margin-top: 22px;
 }
 
 ._dropdown-menu {
@@ -1243,6 +1294,9 @@ iframe {
         flex-flow: row wrap;
         gap: 12px;
     }
+    .cards{
+        max-width: 53vw;
+    }
 }
 @media (max-width: 1800px) {
     .filter-side, .cards-side {
@@ -1257,6 +1311,13 @@ iframe {
     .filter-section_header .block-filter {
         transform: scale(1);
     }
+    .cards{
+        flex:auto;
+        max-width: 60vw;
+    }
+.card__show-button{
+    margin-top: 10vh;
+}
 
 
 }

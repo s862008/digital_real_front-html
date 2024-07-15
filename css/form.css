@@ -65,6 +65,17 @@ margin-top: 30px;
     grid-template-columns: 54vh 54vh 50vh auto;
     grid-gap: 11vh;
 }
+.slider--temp{
+    height: 50px;
+}
+
+.fp-label{
+    padding: 10px 10px 10px 10px;
+
+}
+.fp-label--input{
+    margin-right: 20px;
+}
 .fp-label--tx {
     font-family: var(--font-family);
     font-weight: 300;
