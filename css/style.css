@@ -64,6 +64,12 @@ ul,li{
     border: 1px solid #999999;
     padding-left: 20px;
 }
+.my-input-sm {
+    border: 1px solid #999;
+    border-radius: 10px;
+    width: 100px;
+    height: 42px;
+}
 
 .vertical-center {
     margin: 0;
