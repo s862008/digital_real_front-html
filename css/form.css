@@ -74,23 +74,30 @@
     grid-gap: 4vw;
 }
 .fp-common-gray .fp-filter-item__inner{
-    grid-template-columns: 18vw 18vw auto;
+    grid-template-columns: 25vw 25vw auto;
+    grid-gap: 2.5vw;
+}
+.fp-about-build__count-room, .fp-about-build__view{
+    grid-row: span 2;
 }
 
 .slider {
     height: 40px;
     display: flex;
+    flex-flow: row nowrap;
     align-items: center;
+
+    justify-content: space-between;
 }
-
-.slider input {
-
+.slider h4{
+    margin-right: 5%;
+    flex-basis: max-content;
+    flex-shrink: 0;
 }
 
 .slider__help {
     margin: 0 10px;
-    flex: 1;
-    width: 10%;
+    flex-basis: 20px;
 }
 
 .slider:hover {
@@ -129,6 +136,16 @@
     height: 682px;
     background: rgba(16, 102, 129, 0.05);
     padding: 85px 61px 50px 92px;
+}
+
+.fp-cmn-gray__square p {
+margin-top: 28px;
+}
+.fp-cmn-gray__cost div:nth-of-type(2),.fp-cmn-gray__price div:nth-of-type(2){
+    margin-top: 9.7vh;
+}
+.fp-cmn-gray__price{
+    padding-right: 3vw;
 }
 
 .banner-back-logo {
