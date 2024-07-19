@@ -6,14 +6,16 @@
     background: #fff;
     max-width: 1760px;
     margin: 0 auto;
-    height: 415rem;
+    min-height: 215rem;
     scroll-behavior: auto;
     padding: 5rem 3rem 3rem 4rem;
+    margin-bottom: -200px;
 }
 
 .form-param__choosed {
-    height: 450px;
+   min-height: 250px;
 }
+
 
 .form__close {
     position: relative;
@@ -24,6 +26,7 @@
 
 .fp-choosed {
     padding-top: 5.2rem;
+    padding-bottom: 3rem;
 }
 
 .fp-choosed--temp {
@@ -32,14 +35,21 @@
 
 .fp-choosed__item {
     font-weight: 300;
-    font-size: 30px;
+    font-size: 26px;
+   line-height: 130%;
     color: #000;
-
 }
 
-.fp-choosed__item span {
-    padding-right: 15px;
+.fp-choosed__item span{
+    padding-right: 10px;
+
 }
+.fp-choosed__item label{
+    color: #cacaca;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
 
 .form-param__filter, .fp-filter {
     display: flex;
@@ -158,7 +168,7 @@ margin-top: 3.1vh;
 
 
 
-.banner-back-logo {
+.banner__back-logo {
     position: absolute;
     right: 0;
     width: 572px;
@@ -241,4 +251,45 @@ margin-top: 3.1vh;
     font-weight: 300;
     font-size: 24px;
     color: #000
+}
+
+.fp-submit{
+    border: 0;
+    border-radius: 10px;
+    width: 285px;
+    height: 46px;
+    background: #106681;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+}
+.fp-reset{
+    border: 0;
+    border-radius: 10px;
+    width: 285px;
+    height: 46px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    background: #c4c4c4;
+}
+
+.fp-scroll-top{
+    display: flex;
+    position: fixed;
+    bottom: calc(env(safe-area-inset-bottom) + 90px);
+    right: 38px;
+    width: 64px;
+    height: 64px;
+   border: 0;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 0 0 0 1px #fff;
+    z-index: 4;
+    border-radius: 100%;
+    fill: rgba(217, 217, 217, 0);
+    stroke-width: 1px;
+    stroke: #174449;
+    cursor: pointer;
 }
