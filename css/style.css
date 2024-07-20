@@ -59,12 +59,9 @@ ul, li {
 /* ----------  shared styles ---------------*/
 .wrapper-back-banner {
 
-    background-image:  linear-gradient(0deg, rgba(23.000000528991222, 68.00000354647636, 73.00000324845314, 1) 0%,
-    rgba(37.30096064507961, 110.28110235929489, 118.39000403881073, 1) 56.23987317085266%,
-    rgba(39.068496599793434, 115.50685554742813, 124.00000780820847, 1) 62.07455396652222%,
-    rgba(40.996714532375336, 121.20767444372177, 130.12000501155853, 1) 67.90924072265625%,
-    rgba(55.13698697090149, 163.0136999487877, 175.00000476837158, 1) 100%),
-    url(../img/back_baner_logo.png);
+    background-image:
+            linear-gradient(22deg, rgb(19 56 60) 0%, rgba(37.30096064507961, 110.28110235929489, 118.39000403881073, 1) 56.23987317085266%, rgb(49 121 129) 62.07455396652222%, rgb(3 109 120) 67.90924072265625%, rgb(95 149 155) 100%),
+            url(../img/back_baner_logo.png);
     background-repeat: no-repeat,no-repeat;
     width: 100%;
     background-blend-mode: overlay;
@@ -470,7 +467,14 @@ main {
 }
 
 .my-btn-lg {
-    border: 1px solid #999999;
+    border-radius: 10px;
+    width: 280px;
+    height: 47px;
+    background: linear-gradient(180deg, #27758d 0%, #1c4344 100%);
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    border: 0;
 
 }
 
@@ -1105,6 +1109,37 @@ main {
 /*    text-align: left;*/
 /*    min-width: 40%;*/
 /*}*/
+
+.search-section{
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    border-radius: 25px;
+    max-width: 1796px;
+    padding: 60px 70px;
+    height: 972px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+    background: #fff;
+}
+
+.search-section__inner{
+    padding: 30px 0;
+}
+.search-section__filter-side{
+    border-right: 1px solid #b5b6b7;
+}
+.search-section__card-side .cards-block{
+    padding: 50px;
+}
+
+
+.cards-block__item{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 10px 40px;
+
+}
+
 /*  -         ----footer----         - */
 
 
@@ -1325,7 +1360,9 @@ footer {
 iframe {
     min-height: 450px;
 }
-
+.header-min{
+    min-height: 300px;
+}
 
 /*  Стиль для больших экранов (от 1900px и выше)  */
 @media (min-width: 1900px) {
