@@ -465,8 +465,11 @@ main {
     font-weight: 400;
     color: #000;
 }
-
 .my-btn-lg {
+    border: 1px solid #999999;
+}
+
+.my-btn-long {
     border-radius: 10px;
     width: 280px;
     height: 47px;
@@ -476,6 +479,30 @@ main {
     color: #fff;
     border: 0;
 
+}
+.phone-btn{
+    width: 90%;
+    border: 0;
+    border-radius: 7px;
+    padding: 15px 15px;
+    height: 61px;
+    background: linear-gradient(180deg, #27758d 0%, #1c4344 100%);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
+
+.img-block {
+    height: 405px;
+    width: 350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /*центрируем элемент по горизонтали */
+    align-items: center; /* и вертикали */
+    border: 0.50px solid #999;
+    border-radius: 5px;
 }
 
 .my-listdown, .my-select {
@@ -787,7 +814,7 @@ main {
     flex-flow: row wrap;
     justify-content: flex-end;
     align-content: flex-end;
-    padding: 0px 90px;
+    padding: 0 90px;
     flex: 1
 }
 
@@ -1058,6 +1085,27 @@ main {
     width: 60%;
 }
 
+.cards-block__price{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 36px;
+    color: #000;
+
+}
+.cards-block__price-sqr{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 26px;
+    color: #999;
+}
+
+.percent-h2{
+    font-family: var(--font-family-bold);
+    font-weight: 800;
+    font-size: 48px;
+    color: #106681 !important;
+}
+
 .r-item__title-info, .price {
     font-family: 'Lato SemiBold', sans-serif;
     font-weight: 500;
@@ -1065,6 +1113,13 @@ main {
     color: #000;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+.r-item__company{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+    padding-top: 7vh;
 }
 
 .price {
@@ -1116,14 +1171,14 @@ main {
     margin: 0 auto;
     border-radius: 25px;
     max-width: 1796px;
-    padding: 60px 70px;
-    height: 972px;
+    padding: 60px 50px;
+    min-height: 972px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
     background: #fff;
 }
 
 .search-section__inner{
-    padding: 30px 0;
+    padding: 38px 18px;
 }
 .search-section__filter-side{
     border-right: 1px solid #b5b6b7;
@@ -1136,8 +1191,14 @@ main {
 .cards-block__item{
     display: flex;
     flex-flow: row nowrap;
-    margin: 10px 40px;
-
+    margin: 16px 0 0 17px;
+    padding: 16px 0px 31px 20px;
+    grid-gap: 52px;
+    justify-content: space-evenly;
+    border: 1px solid rgba(153, 153, 153, 0.01);
+    border-radius: 10px;
+    box-shadow: -1px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: rgba(217, 217, 217, 0);
 }
 
 /*  -         ----footer----         - */
@@ -1230,7 +1291,7 @@ footer {
     height: 232px;
     background-color: white;
     border-radius: 6px;
-    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.5);
 }
 
 .footer_white_wrapper_logo_logo {
