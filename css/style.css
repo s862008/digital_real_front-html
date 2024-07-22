@@ -67,10 +67,13 @@ ul, li {
     background-blend-mode: overlay;
     background-position: top center,right;
     background-size: cover, 16%;
-    height: 481px;
+    height: 366px;
 
 }
-
+.my-container, .container-main{
+    margin: 0 auto;
+    max-width: 1020px;
+}
 
 .my-input-lg {
     font-size: 1.4rem;
@@ -113,7 +116,11 @@ ul, li {
 }
 
 .title {
-
+    font-family: var(--font-family-bold);
+    font-weight: 500;
+    font-size: 40px;
+    color: #000;
+    margin: 14px 14px;
 
 }
 
@@ -152,11 +159,16 @@ ul, li {
 }
 
 main {
-    min-height: 2000px;
     width: 100%;
     height: max-content;
 }
 
+.search-page{
+    min-height: 2000px;
+}
+.apartment-page{
+    min-height: 3500px;
+}
 
 /* ------------ HOME --------------*/
 
@@ -495,8 +507,8 @@ main {
 }
 
 .img-block {
-    height: 405px;
-    width: 350px;
+    height: 326px;
+    width: 300px;
     margin: 0 auto;
     display: flex;
     justify-content: center; /*центрируем элемент по горизонтали */
@@ -1109,7 +1121,7 @@ main {
 .r-item__title-info, .price{
     font-family: 'Lato SemiBold', sans-serif;
     font-weight: 500;
-    font-size: 36px;
+    font-size: 30px;
     color: #000;
     margin-top: 2px;
     margin-bottom: 20px;
@@ -1143,7 +1155,7 @@ main {
 .r-item__type-build, .r-item__address, .r-item__categories.price-squad {
     font-family: 'Lato SemiBold', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 19px;
     line-height: 146%;
     color: #999;
 }
@@ -1152,9 +1164,9 @@ main {
 .r-item__categories {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: 200px auto;
     line-height: 100%;
-    font-size: 26px;
+    font-size: 15px;
 }
 
 
@@ -1225,11 +1237,100 @@ main {
 }
 
 /*  -         ----apartment----         - */
+.apartment-section{
+    top: 40px;
+    position: relative;
+    margin-bottom: 100px;
 
+}
 
+.as__gallery-side{
+    border-radius: 25px;
+    min-height: 545px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+    background: #fff;
+    padding: 30px 20px;
+}
+.as__info-side{
+    font-family: var(--font-family);
+    border-radius: 25px;
+    min-height: 456px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+    background: #fff;
+    padding: 30px 20px;
+}
+.as__price-block{
+    margin-bottom: 30px ;
+}
+.as__price-block .price-squad{
+    font-weight: 500;
+    font-size: 20px;
+    color: #999;
+}
+.as-info__items{
+    line-height: 140%;
+}
+.as-item__type-build{
+    font-weight: 500;
+    font-size: 15px;
+    color: #000;
+}
+.as-item__address{
+    font-weight: 400;
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 10px;
+}
+.as-item__categories{
+    display: grid;
+    grid-template-columns: 150px auto;
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 13px;
+    color: #999;
+}
+.as-item__categories span{
+    font-weight: 400;
+    font-size: 13px;
+    color: #000;
+}
 
+.apartment-build-info, .ab-info{
+    margin-bottom: 100px;
+    height: 100%;
+}
+.ab-info__content{
+    border-radius: 25px;
+    max-width: 1020px;
+    min-height: 740px;
+    background: rgba(16, 102, 129, 0.05);
+    border:0;
+    padding: 30px;
+}
+.ab-info__content >.row:nth-of-type(1){
+   margin-bottom: 60px;
+}
+.ab-info__text{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 200%;
+    color: #333;
+}
 
-
+.ab-info__img{
+    background-image: url("../img/стел жк 10.png");
+    border-radius: 20px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 447px;
+    height: 395px;
+    position: relative;
+}
+.ab-info__content iframe{
+    min-height: 250px;
+}
 
 /*  -         ----footer----         - */
 
@@ -1457,9 +1558,8 @@ iframe {
 
 /*  Стиль для больших экранов (от 1900px и выше)  */
 @media (min-width: 1900px) {
-    .container-fluid, .container {
-        max-width: 1900px;
-
+    .container-fluid, .my-container {
+        max-width: 1890px;
     }
 }
 
@@ -1509,9 +1609,6 @@ iframe {
 }
 
 @media (max-width: 1400px) {
-    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-        max-width: 1320px;
-    }
 
     .filter-section_header .block-filter {
         transform: scale(0.8);
