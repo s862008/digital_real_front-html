@@ -63,7 +63,7 @@
 }
 
 .fp-filter__items {
-
+    padding: 0;
 }
 
 .fp-filter__item {
@@ -82,7 +82,7 @@
     grid-gap: 4vw 2.5vw;
 }
 .fp-common-gray .fp-filter-item__inner{
-    grid-template-columns:repeat(auto-fill, [col-start] minmax(25vw, 1fr) [col-end]);
+    grid-template-columns:repeat(3, 1fr);
     grid-gap: 2.8vw;
 }
 .fp-about-apart__count-room, .fp-about-apart__view{
@@ -150,7 +150,7 @@
     min-width: 1756px;
     min-height: 682px;
     background: rgba(16, 102, 129, 0.05);
-    padding: 85px 61px 50px 92px;
+    padding: 83px 60px 50px 56px;
 }
 
 
@@ -302,16 +302,42 @@ margin-top: 3.1vh;
         min-height: 682px;
         background: rgba(16, 102, 129, 0.05);
     }
+    .fp-common-gray .fp-filter-item__inner{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-@media (max-width: 400px){
+@media (max-width: 1020px){
+    .fp-common-gray {
 
-    .fp-common-gray .fp-filter-item__inner {
+        min-width: 112%;
+
+    }
+    .fp-filter-item__inner {
+        grid-template-columns: repeat(2, 1fr);;
+    }
+
+    .fp-common-gray .fp-filter-item__inner{
         grid-template-columns: repeat(1, 1fr);
     }
 
+}
+@media (max-width: 800px){
+
+    .fp-common-gray {
+        min-width: 108%;
+    }
+    .fp-filter__items{
+        padding: 100px;
+    }
     .fp-filter-item__inner {
+
         grid-template-columns: repeat(1, 1fr);;
+    }
+
+    .fp-common-gray .fp-filter-item__inner{
+
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
