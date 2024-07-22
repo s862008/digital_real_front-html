@@ -72,7 +72,7 @@ ul, li {
 }
 .my-container, .container-main{
     margin: 0 auto;
-    max-width: 1020px;
+    max-width: 1156px;
 }
 
 .my-input-lg {
@@ -167,7 +167,7 @@ main {
     min-height: 2000px;
 }
 .apartment-page{
-    min-height: 3500px;
+    min-height: 3100px;
 }
 
 /* ------------ HOME --------------*/
@@ -1249,15 +1249,52 @@ main {
     min-height: 545px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
     background: #fff;
-    padding: 30px 20px;
+    padding: 40px 30px;
+
 }
+.as__toogle{
+    width: 350px;
+    height: 30px;
+    border:0;
+    border-radius: 7px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #fffefe;
+    font-weight: 400;
+    font-size: 13px;
+    color: #707070;
+}
+
+.as__main-img{
+
+    border: 0.50px solid #999;
+    border-radius: 7px;
+    max-width: 700px;
+    height: 310px;
+    background: #fffefe;
+}
+.as__main-img img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+.as__group-imgs{
+
+}
+
+.btn-check:checked+.btn.as__toogle{
+    background: rgba(16, 102, 129, 0.1);
+    border: 0;
+    color: #707070;
+}
+
 .as__info-side{
     font-family: var(--font-family);
     border-radius: 25px;
     min-height: 456px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
     background: #fff;
-    padding: 30px 20px;
+    padding: 40px 20px;
+    max-width: 363px;
 }
 .as__price-block{
     margin-bottom: 30px ;
@@ -1283,8 +1320,8 @@ main {
 }
 .as-item__categories{
     display: grid;
-    grid-template-columns: 150px auto;
-    line-height: 150%;
+    grid-template-columns: 160px auto;
+    line-height: 200%;
     font-weight: 400;
     font-size: 13px;
     color: #999;
@@ -1301,7 +1338,7 @@ main {
 }
 .ab-info__content{
     border-radius: 25px;
-    max-width: 1020px;
+    /*max-width: 1020px;*/
     min-height: 740px;
     background: rgba(16, 102, 129, 0.05);
     border:0;
