@@ -82,7 +82,7 @@
     grid-gap: 4vw 2.5vw;
 }
 .fp-common-gray .fp-filter-item__inner{
-    grid-template-columns:repeat(auto-fill, 25vw);
+    grid-template-columns:repeat(auto-fill, [col-start] minmax(25vw, 1fr) [col-end]);
     grid-gap: 2.8vw;
 }
 .fp-about-apart__count-room, .fp-about-apart__view{
@@ -153,6 +153,7 @@
     padding: 85px 61px 50px 92px;
 }
 
+
 .fp-cmn-gray__square p {
 margin-top: 3.1vh;
 }
@@ -213,7 +214,7 @@ margin-top: 3.1vh;
 
 .fp-label--check:checked + span {
     border: 0;
-    background: url(/img/checked.svg) left top no-repeat;
+    background: url(../img/checked.svg) left top no-repeat;
 }
 
 .fp-input {
@@ -292,4 +293,25 @@ margin-top: 3.1vh;
     stroke-width: 1px;
     stroke: #174449;
     cursor: pointer;
+}
+@media (max-width: 1800px) {
+    .fp-common-gray {
+        position: relative;
+        margin: 0 auto;
+        min-width: 105%;
+        min-height: 682px;
+        background: rgba(16, 102, 129, 0.05);
+    }
+}
+
+@media (max-width: 400px){
+
+    .fp-common-gray .fp-filter-item__inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .fp-filter-item__inner {
+        grid-template-columns: repeat(1, 1fr);;
+    }
+
 }
