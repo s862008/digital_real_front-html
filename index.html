@@ -34,7 +34,8 @@
 
 </head>
 <body>
-<iframe src="header.html" width="100%" id="myIframe"></iframe>
+<!--<iframe src="header.html" width="100%" id="myIframe"></iframe>-->
+<header id="header"></header>
 <!--<ul class="menu2">-->
 <!--    <li>-->
 <!--        <a href="#">Главная</a>-->
@@ -135,19 +136,18 @@
                     <div class="block-filter">
                         <label for="cost-input"> Цена, руб. </label>
                         <div class="cost block-inputs">
-                            <input type="text" class="d-block my-input-lg" id="cost-input" placeholder="от">
-
-                            <input type="text" class="d-block my-input-lg" placeholder="до">
+                            <input type="text" class="my-input-lg" id="cost-input" placeholder="от">
+                            <input type="text" class="my-input-lg" placeholder="до">
+                            <div class="w-50"></div>
 
                         </div>
                     </div>
                     <div class="block-filter">
                         <label for="area-input"> Площадь, м </label>
                         <div class="area block-inputs">
-                            <input type="text" id="area-input" class="d-block my-input-lg" placeholder="от">
-
-                            <input type="text" class="d-block my-input-lg" placeholder="до">
-
+                            <input type="text" id="area-input" class="my-input-lg" placeholder="от">
+                            <input type="text" class="my-input-lg" placeholder="до">
+                            <div class="w-75"></div>
                         </div>
 
                     </div>
@@ -448,10 +448,18 @@
 
 </main>
 
-
-<iframe src="footer.html" width="100%" height="800px"></iframe>
+<footer id="footer"></footer>
+<!--<iframe src="footer.html" width="100%" height="800px"></iframe>-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+<script>
+    fetch('header.html')
+        .then(response => response.text())
+        .then(html => document.getElementById('header').innerHTML = html);
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(html => document.getElementById('footer').innerHTML = html);
+</script>
 </body>
 </html>
