@@ -136,34 +136,30 @@
     <section class="features">
         <div class="container-main">
             <h2 class="title--h2">Особенности ЖК</h2>
-            <div class="features__list my-5">
+            <div class="features__list">
                 <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
                                 data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
-                                aria-selected="true">Главная
+                                aria-selected="true"> Социальная инфраструктура
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
                                 data-bs-target="#profile-tab-pane" type="button" role="tab"
-                                aria-controls="profile-tab-pane" aria-selected="false">Профиль
+                                aria-controls="profile-tab-pane" aria-selected="false">Подземный паркинг
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
                                 data-bs-target="#contact-tab-pane" type="button" role="tab"
-                                aria-controls="contact-tab-pane" aria-selected="false">Контакт
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="disabled-tab" data-bs-toggle="tab"
-                                data-bs-target="#disabled-tab-pane" type="button" role="tab"
-                                aria-controls="disabled-tab-pane" aria-selected="false" disabled>Отключен
+                                aria-controls="contact-tab-pane" aria-selected="false">Благоустройство
                         </button>
                     </li>
                 </ul>
             </div>
+        </div>
+        <div class="container">
             <div class="features__details">
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
@@ -214,20 +210,22 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
-                         tabindex="0">...
+                         tabindex="1">
+                        <div class="details__item">
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
-                         tabindex="0">...
+                         tabindex="2">
+                        <div class="details__item">
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
-                         tabindex="0">...
-                    </div>
+
                 </div>
             </div>
         </div>
     </section>
     <section class="gk-choice">
-        <div class="container-main">
+        <div class="container">
             <h2 class="title--h2">Выбрать планировку</h2>
             <div class="filter-section__header">
                 <div class="row">
@@ -289,161 +287,160 @@
 
 
             </div>
+            <div class="filter-section_content">
+                <div class="filter-section_content_inner">
+                    <div class="row">
+                        <div class="result-search__items">
 
-
-        <div class="filter-section_content">
-            <div class="filter-section_content_inner">
-                <div class="row">
-                    <div class="result-search__items">
-
-                        <div class="result-search__item" onclick="location.href='apartment.html'">
-                            <div class="r-item-img">
-                                <img src="./img/image 8.png">
-                            </div>
-                            <div class="r-item-info">
-                                <h2 class="r-item__title-info">{{2 комнаты}} {{77.7 m2}} </h2>
-                                <div class="r-item__type-build">{{Новосторойка,}}</div>
-                                <div class="r-item__address">{{Воронеж,}}</div>
-                                <div class="r-item__categories">
-                                    <div>Кухня: . . . . . . . . . . . . . .</div>
-                                    <span>{{16.8 m}}</span>
-                                    <div>Этаж . . . . . . . . . . . . . . .</div>
-                                    <span>{{10}}</span>
-                                    <div>Срок сдачи . . . . . . . . . .</div>
-                                    <span>{{1 кв 2023г}}</span>
+                            <div class="result-search__item" onclick="location.href='apartment.html'">
+                                <div class="r-item-img">
+                                    <img src="./img/image 8.png">
                                 </div>
+                                <div class="r-item-info">
+                                    <h2 class="r-item__title-info">{{2 комнаты}} {{77.7 m2}} </h2>
+                                    <div class="r-item__type-build">{{Новосторойка,}}</div>
+                                    <div class="r-item__address">{{Воронеж,}}</div>
+                                    <div class="r-item__categories">
+                                        <div>Кухня: . . . . . . . . . . . . . .</div>
+                                        <span>{{16.8 m}}</span>
+                                        <div>Этаж . . . . . . . . . . . . . . .</div>
+                                        <span>{{10}}</span>
+                                        <div>Срок сдачи . . . . . . . . . .</div>
+                                        <span>{{1 кв 2023г}}</span>
+                                    </div>
 
-                                <div class="r-item__price-block">
-                                    <div class="price">6 342 534</div>
-                                    <div class="price-squad">77 205 <span> р/м<sup>2</sup></span></div>
+                                    <div class="r-item__price-block">
+                                        <div class="price">6 342 534</div>
+                                        <div class="price-squad">77 205 <span> р/м<sup>2</sup></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result-search__item" onclick="location.href='apartment.html'">
+                                <div class="r-item-img">
+                                    <img src="./img/image 8.png">
+                                </div>
+                                <div class="r-item-info">
+                                    <h2 class="r-item__title-info">{{2 комнаты}} {{77.7 m2}}</h2>
+                                    <div class="r-item__type-build">{{Новосторойка,}}</div>
+                                    <div class="r-item__address">{{Воронеж,}}</div>
+                                    <div class="r-item__categories">
+                                        <div>Кухня: . . . . . . . . . . . . . .</div>
+                                        <span>{{16.8 m}}</span>
+                                        <div>Этаж . . . . . . . . . . . . . . .</div>
+                                        <span>{{10}}</span>
+                                        <div>Срок сдачи . . . . . . . . . .</div>
+                                        <span>{{1 кв 2023г}}</span>
+                                    </div>
+
+                                    <div class="r-item__price-block">
+                                        <div class="price">6 342 534</div>
+                                        <div class="price-squad">77 205 <span> р/м<sup>2</sup></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result-search__item" onclick="location.href='apartment.html'">
+                                <div class="r-item-img">
+                                    <img src="./img/image 8.png">
+                                </div>
+                                <div class="r-item-info">
+                                    <h2 class="r-item__title-info">{{2 комнаты}} {{77.7 m2}}</h2>
+                                    <div class="r-item__type-build">{{Новосторойка,}}</div>
+                                    <div class="r-item__address">{{Воронеж,}}</div>
+                                    <div class="r-item__categories">
+                                        <div>Кухня: . . . . . . . . . . . . . .</div>
+                                        <span>{{16.8 m}}</span>
+                                        <div>Этаж . . . . . . . . . . . . . . .</div>
+                                        <span>{{10}}</span>
+                                        <div>Срок сдачи . . . . . . . . . .</div>
+                                        <span>{{1 кв 2023г}}</span>
+                                    </div>
+
+                                    <div class="r-item__price-block">
+                                        <div class="price">6 342 534</div>
+                                        <div class="price-squad">77 205 <span> р/м<sup>2</sup></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result-search__item" onclick="location.href='apartment.html'">
+                                <div class="r-item-img">
+                                    <img src="./img/image 8.png">
+                                </div>
+                                <div class="r-item-info">
+                                    <h2 class="r-item__title-info">{{2 комнаты}} {{77.7 m2}}</h2>
+                                    <div class="r-item__type-build">{{Новосторойка,}}</div>
+                                    <div class="r-item__address">{{Воронеж,}}</div>
+                                    <div class="r-item__categories">
+                                        <div>Кухня: . . . . . . . . . . . . . .</div>
+                                        <span>{{16.8 m}}</span>
+                                        <div>Этаж . . . . . . . . . . . . . . .</div>
+                                        <span>{{10}}</span>
+                                        <div>Срок сдачи . . . . . . . . . .</div>
+                                        <span>{{1 кв 2023г}}</span>
+                                    </div>
+
+                                    <div class="r-item__price-block">
+                                        <div class="price">6 342 534</div>
+                                        <div class="price-squad">77 205 <span> р/м<sup>2</sup></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result-search__item" onclick="location.href='apartment.html'">
+                                <div class="r-item-img">
+                                    <img src="./img/image 8.png">
+                                </div>
+                                <div class="r-item-info">
+                                    <h2 class="r-item__title-info">{{2 комнаты}} {{77.7 m2}}</h2>
+                                    <div class="r-item__type-build">{{Новосторойка,}}</div>
+                                    <div class="r-item__address">{{Воронеж,}}</div>
+                                    <div class="r-item__categories">
+                                        <div>Кухня: . . . . . . . . . . . . . .</div>
+                                        <span>{{16.8 m}}</span>
+                                        <div>Этаж . . . . . . . . . . . . . . .</div>
+                                        <span>{{10}}</span>
+                                        <div>Срок сдачи . . . . . . . . . .</div>
+                                        <span>{{1 кв 2023г}}</span>
+                                    </div>
+
+                                    <div class="r-item__price-block">
+                                        <div class="price">6 342 534</div>
+                                        <div class="price-squad">77 205 <span> р/м<sup>2</sup></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result-search__item" onclick="location.href='apartment.html'">
+                                <div class="r-item-img">
+                                    <img src="./img/image 8.png">
+                                </div>
+                                <div class="r-item-info">
+                                    <h2 class="r-item__title-info">{{2 комнаты}}</h2>
+                                    <div class="r-item__type-build">{{Новосторойка,}}</div>
+                                    <div class="r-item__address">{{Воронеж,}}</div>
+                                    <div class="r-item__categories">
+                                        <div>Кухня: . . . . . . . . . . . . . .</div>
+                                        <span>{{16.8 m}}</span>
+                                        <div>Этаж . . . . . . . . . . . . . . .</div>
+                                        <span>{{10}}</span>
+                                        <div>Срок сдачи . . . . . . . . . .</div>
+                                        <span>{{1 кв 2023г}}</span>
+                                    </div>
+
+                                    <div class="r-item__price-block">
+                                        <div class="price">6 342 534</div>
+                                        <div class="price-squad">77 205 <span> р/м<sup>2</sup></span></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="result-search__item" onclick="location.href='apartment.html'">
-                            <div class="r-item-img">
-                                <img src="./img/image 8.png">
-                            </div>
-                            <div class="r-item-info">
-                                <h2 class="r-item__title-info">{{2 комнаты}} {{77.7 m2}}</h2>
-                                <div class="r-item__type-build">{{Новосторойка,}}</div>
-                                <div class="r-item__address">{{Воронеж,}}</div>
-                                <div class="r-item__categories">
-                                    <div>Кухня: . . . . . . . . . . . . . .</div>
-                                    <span>{{16.8 m}}</span>
-                                    <div>Этаж . . . . . . . . . . . . . . .</div>
-                                    <span>{{10}}</span>
-                                    <div>Срок сдачи . . . . . . . . . .</div>
-                                    <span>{{1 кв 2023г}}</span>
-                                </div>
 
-                                <div class="r-item__price-block">
-                                    <div class="price">6 342 534</div>
-                                    <div class="price-squad">77 205 <span> р/м<sup>2</sup></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="result-search__item" onclick="location.href='apartment.html'">
-                            <div class="r-item-img">
-                                <img src="./img/image 8.png">
-                            </div>
-                            <div class="r-item-info">
-                                <h2 class="r-item__title-info">{{2 комнаты}} {{77.7 m2}}</h2>
-                                <div class="r-item__type-build">{{Новосторойка,}}</div>
-                                <div class="r-item__address">{{Воронеж,}}</div>
-                                <div class="r-item__categories">
-                                    <div>Кухня: . . . . . . . . . . . . . .</div>
-                                    <span>{{16.8 m}}</span>
-                                    <div>Этаж . . . . . . . . . . . . . . .</div>
-                                    <span>{{10}}</span>
-                                    <div>Срок сдачи . . . . . . . . . .</div>
-                                    <span>{{1 кв 2023г}}</span>
-                                </div>
-
-                                <div class="r-item__price-block">
-                                    <div class="price">6 342 534</div>
-                                    <div class="price-squad">77 205 <span> р/м<sup>2</sup></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="result-search__item" onclick="location.href='apartment.html'">
-                            <div class="r-item-img">
-                                <img src="./img/image 8.png">
-                            </div>
-                            <div class="r-item-info">
-                                <h2 class="r-item__title-info">{{2 комнаты}} {{77.7 m2}}</h2>
-                                <div class="r-item__type-build">{{Новосторойка,}}</div>
-                                <div class="r-item__address">{{Воронеж,}}</div>
-                                <div class="r-item__categories">
-                                    <div>Кухня: . . . . . . . . . . . . . .</div>
-                                    <span>{{16.8 m}}</span>
-                                    <div>Этаж . . . . . . . . . . . . . . .</div>
-                                    <span>{{10}}</span>
-                                    <div>Срок сдачи . . . . . . . . . .</div>
-                                    <span>{{1 кв 2023г}}</span>
-                                </div>
-
-                                <div class="r-item__price-block">
-                                    <div class="price">6 342 534</div>
-                                    <div class="price-squad">77 205 <span> р/м<sup>2</sup></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="result-search__item" onclick="location.href='apartment.html'">
-                            <div class="r-item-img">
-                                <img src="./img/image 8.png">
-                            </div>
-                            <div class="r-item-info">
-                                <h2 class="r-item__title-info">{{2 комнаты}} {{77.7 m2}}</h2>
-                                <div class="r-item__type-build">{{Новосторойка,}}</div>
-                                <div class="r-item__address">{{Воронеж,}}</div>
-                                <div class="r-item__categories">
-                                    <div>Кухня: . . . . . . . . . . . . . .</div>
-                                    <span>{{16.8 m}}</span>
-                                    <div>Этаж . . . . . . . . . . . . . . .</div>
-                                    <span>{{10}}</span>
-                                    <div>Срок сдачи . . . . . . . . . .</div>
-                                    <span>{{1 кв 2023г}}</span>
-                                </div>
-
-                                <div class="r-item__price-block">
-                                    <div class="price">6 342 534</div>
-                                    <div class="price-squad">77 205 <span> р/м<sup>2</sup></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="result-search__item" onclick="location.href='apartment.html'">
-                            <div class="r-item-img">
-                                <img src="./img/image 8.png">
-                            </div>
-                            <div class="r-item-info">
-                                <h2 class="r-item__title-info">{{2 комнаты}}</h2>
-                                <div class="r-item__type-build">{{Новосторойка,}}</div>
-                                <div class="r-item__address">{{Воронеж,}}</div>
-                                <div class="r-item__categories">
-                                    <div>Кухня: . . . . . . . . . . . . . .</div>
-                                    <span>{{16.8 m}}</span>
-                                    <div>Этаж . . . . . . . . . . . . . . .</div>
-                                    <span>{{10}}</span>
-                                    <div>Срок сдачи . . . . . . . . . .</div>
-                                    <span>{{1 кв 2023г}}</span>
-                                </div>
-
-                                <div class="r-item__price-block">
-                                    <div class="price">6 342 534</div>
-                                    <div class="price-squad">77 205 <span> р/м<sup>2</sup></span></div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                 </div>
 
             </div>
-
-        </div>
-        <div class="d-flex justify-content-end my-5 mx-5">
-            <button class="show-button"> показать все варианты</button>
-        </div>
+            <div class="d-flex justify-content-center my-5 mx-5">
+                <button class="show-button"> показать все варианты </button>
+                <button class="show-button"> Использовать Smart-подбор </button>
+            </div>
         </div>
         </div>
 
