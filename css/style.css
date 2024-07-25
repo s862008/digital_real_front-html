@@ -203,7 +203,7 @@ main {
 }
 
 .prepear-search {
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 10%;
     padding: 0 40px 0 100px;
 }
@@ -237,7 +237,7 @@ main {
     border-bottom: 5px solid #174449;;
 }
 
-.title-menu div:active {
+.title-menu >div:active {
     display: block;
     border-bottom: 5px solid gray;
 }
@@ -418,106 +418,32 @@ main {
     position: relative;
 }
 
-.header_dropdown_flex .nav-a:after {
-    display: block;
-    position: absolute;
-    top: 170%;
-    left: 0;
-    width: 0;
-    height: 5px;
-    background-color: #174449;
-    content: "";
-}
-
-.header_dropdown_flex .nav-a:hover:after,
-.header_dropdown_flex .nav-a:focus:after {
-    width: 100%;
-}
-
-.header_dropdown_flex .active::after {
-    display: block;
-    position: absolute;
-    top: 170%;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background-color: #174449;
-    content: "";
-}
 
 .header_drop_down_useful {
-    margin-top: 32px;
+    margin-top: 7px;
     font-weight: 300;
     font-size: 35px;
-}
-
-.header_drop_down_useful_first_column {
-    margin-left: 300px;
-}
-
-.header_drop_down_useful_first_column li {
-    cursor: pointer;
-}
-
-.header_drop_down_useful_second_column {
-    margin-left: 98px;
-}
-
-.header_drop_down_useful_second_column li {
-    cursor: pointer;
-}
-
-.header_drop_down_useful_third_column li {
-    cursor: pointer;
 }
 
 .header_drop_down_mortgage {
-    margin-top: 32px;
+    margin-top: 7px;
     font-weight: 300;
     font-size: 35px;
-}
+    min-height: 200px;
+    padding-top: 22px;
 
-.header_drop_down_mortgage_only_column {
-    margin-left: 257px;
-}
-
-.header_drop_down_mortgage_only_column li {
-    cursor: pointer;
 }
 
 .header_drop_down_new_buildings {
-    margin-top: 30px;
+    margin-top: 7px;
     font-weight: 300;
     font-size: 33px;
+    line-height: 140%;
+    padding-top: 22px;
 }
 
-.header_drop_down_new_buildings_first_column {
-    margin-left: 250px;
-    margin-bottom: 120px;
-}
 
-.header_drop_down_new_buildings_first_column li {
-    cursor: pointer;
-}
-
-.header_drop_down_new_buildings_second_column {
-    margin-left: 126px;
-    margin-bottom: 230px;
-}
-
-.header_drop_down_new_buildings_second_column li {
-    cursor: pointer;
-}
-
-.header_drop_down_new_buildings_third_column {
-    margin-left: 50px;
-}
-
-.header_drop_down_new_buildings_third_column li {
-    cursor: pointer;
-}
-
-.header_drop_down_new_buildings_third_column_img {
+.header_nav_column_img {
     width: 591px;
     height: 407px;
     object-fit: cover;
@@ -648,7 +574,7 @@ main {
 
 
 .filter-side {
-    height: 1000px;
+    min-height: 825px;
 }
 
 .title-section {
@@ -815,7 +741,7 @@ main {
 
 .cards-side {
     padding: 30px 0 0 30px;
-    height: 970px;
+    min-height: 825px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -829,13 +755,13 @@ main {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    grid-gap: 50px;
+    grid-gap: 30px;
     padding: 0 10px;
 }
 
 .cards__slider {
     position: relative;
-    height: 762px;
+    height: 740px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -858,9 +784,9 @@ main {
 
 
 .brdr {
-    width: 468px;
+    width: 330px;
     background-color: #ffffff;
-    height: 762px;
+    height: 590px;
     transition: border-radius 0.2s linear;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     border-radius: 30px;
@@ -878,21 +804,23 @@ main {
     transform-box: fill-box;
     /*border-radius: 10% 50px;*/
     transform: scale(1);
-    height: 330px;
+    height: 260px;
+}
+.brdr:hover > .info_section{
+    padding: 15px 24px 10px 20px;
+    /*line-height: 1vh;*/
 }
 
 .brdr:hover .card__extended-block {
-    display: block;
+     display: block;
 }
 
 .brdr:empty {
-    /*height: 100%;*/
     height: 762px;
 }
 
 .img_section {
-    /*margin: -15px -15px 69px -15px;*/
-    height: 466px;
+    height: 360px;
 }
 
 .title_img {
@@ -914,13 +842,12 @@ main {
     position: absolute;
     border-radius: 10px;
     text-align: center;
-    top: 34px;
-    left: 46px;
+    top: 29px;
+    left: 31px;
     border: 0;
-    box-shadow: white;
     background-color: rgba(246, 246, 246, 0.800000011920929);
-    height: 47px;
-    width: 110px;
+    height: 33px;
+    width: 90px;
     font-weight: 500;
     font-size: 15px;
 }
@@ -930,8 +857,8 @@ main {
     position: absolute;
     background: #f4f4f4;
     border-radius: 10px;
-    width: 137px;
-    height: 110px;
+    width: 96px;
+    height: 78px;
     margin-left: 30px;
     border: 0;
     box-shadow: white;
@@ -956,39 +883,38 @@ main {
 }
 
 .info_section {
-    padding: 90px 30px 10px 30px;
+    padding: 30px 24px 10px 24px;
     position: relative;
-    line-height: 1vh;
 }
 
 .info_section > div:nth-child(1) {
-    margin-bottom: 26px;
     font-family: var(--font-family-bold);
     font-weight: 700;
     font-size: 30px;
     color: #000;
+    line-height: 120%;
+
 }
 
 .info_section > div:nth-child(2) {
-    margin-bottom: 55px;
     font-family: var(--font-family);
     font-weight: 300;
-    font-size: 18px;
+    font-size: 13px;
     color: #000;
+    margin-bottom: 15px;
 }
 
 .info_section > div:nth-child(3) {
-    margin-bottom: 34px;
     font-family: var(--font-family);
     font-weight: 300;
-    font-size: 20px;
+    font-size: 15px;
     color: #174246;
 }
 
 .info_section > div:nth-child(4) {
     font-family: var(--font-family);
     font-weight: 300;
-    font-size: 20px;
+    font-size: 15px;
     color: #bcbcbc;
 }
 
@@ -1007,9 +933,9 @@ main {
 .ex-bl__build-cnt {
     font-family: var(--font-family-bold);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
     color: #000;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .ex-bl__build-cnt span {
@@ -1021,16 +947,16 @@ main {
     flex-flow: column nowrap;
     justify-content: space-evenly;
     padding: 0;
-    font-size: 20px;
+    font-size: 15px;
     color: #bcbcbc;
-    line-height: 2vh;
+    line-height: 1.5vh;
     min-height: 100px;
 
 }
 
 .ex-bl__list-apart li a {
     padding: 0;
-    font-size: 15px;
+    font-size: 11px;
     color: #174246 !important;
 }
 
@@ -1044,8 +970,8 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
-    align-content: flex-end;
-    padding: 0 90px;
+    align-items: center;
+    padding: 0px 70px;
     flex: 1
 }
 
@@ -1935,7 +1861,9 @@ footer {
     z-index: 99;
     background-color: rgb(255, 255, 255)
 }
-
+.submenu  div ul li{
+    cursor: pointer;
+}
 .nav-a:hover .submenu {
     display: block;
 
