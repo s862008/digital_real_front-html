@@ -35,21 +35,50 @@
 <iframe height="300px" src="header.html" width="100%"></iframe>
 <body>
 <main class="filter-page">
-    <section class="banner banner--small">
-        <img alt="back-logo" class="banner__back-logo" src="img/back_baner_logo.png">
-        <div class="container-fluid">
-            <div class="row">
+<!--    <section class="banner banner&#45;&#45;small">-->
+<!--        <img alt="back-logo" class="banner__back-logo" src="img/back_baner_logo.png">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
 
-                <div class="banner-inner d-flex flex-row ">
-                    <div class="info-banner--small">
-                        рекламный баннер
+<!--                <div class="banner-inner d-flex flex-row ">-->
+<!--                    <div class="info-banner&#45;&#45;small">-->
+<!--                        рекламный баннер-->
+<!--                    </div>-->
+<!--                    <div class="text-part-banner">-->
+<!--                        <div class="title-banner">-->
+<!--                            ВЫБОР ЗА ТОБОЙ!-->
+<!--                        </div>-->
+
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </div>-->
+
+<!--        </div>-->
+
+<!--    </section>-->
+    <section class="banner">
+        <img class="banner__back-logo" src="img/back_baner_logo.png" alt="back-logo">
+        <div class="container">
+            <div class="row flex-nowrap">
+
+                <div class="banner__img-part"></div>
+                <div class="banner__text-part">
+                    <div class="banner-title">
+                        ВЫБОР ЗА ТОБОЙ!
                     </div>
-                    <div class="text-part-banner">
-                        <div class="title-banner">
-                            ВЫБОР ЗА ТОБОЙ!
+                    <div class="banner-info">
+                        квартира в новостройке напрямую от застройщика <br> в Воронеже
+                    </div>
+                    <div class="banner__smart-part">
+                        <a href="param_search.html">
+                            <button>SMART-ПОДБОР</button>
+                        </a>
+                        <div class="smart-part__info">
+                            умный поиск для более точного подбора недвижимости
                         </div>
-
                     </div>
+
                 </div>
 
             </div>
@@ -58,7 +87,7 @@
 
     </section>
     <section class="filter-section">
-        <div class="container">
+        <div class="container-main">
             <div class="filter-section__header">
                 <div class="row ">
                     <div class="col-xxl-5  ">
@@ -114,9 +143,10 @@
                     </div>
                 </div>
                 <div class="row justify-content-end">
+                    <div class="col-2"><button class="filter-button _show vertical-center"> Показать 5</button></div>
+                    <div class="col-3">  <button class="filter-button _cancel vertical-center "> X Сбросить фильтр</button></div>
 
-                    <button class="filter-button _show vertical-center mx-5"> Показать 5</button>
-                    <button class="filter-button _cancel vertical-center "> X Сбросить фильтр</button>
+
 
                 </div>
                 <div class="row">
