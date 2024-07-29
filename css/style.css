@@ -768,10 +768,10 @@ main {
 
 .prev-slide, .next-slide {
     flex: 1;
-    max-width: 60px;
+    max-width: 40px;
     cursor: pointer;
-    height: 56px;
-    width: 59px;
+    height: 37px;
+    width: 37px;
     border-radius: 50px;
     border: 1px solid black;
     display: flex;
@@ -1801,9 +1801,9 @@ footer {
 }
 
 .tx-footer-light {
-    font-family: 'Lato Light', serif;
-    font-weight: 200;
-    font-size: 25px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
 }
 
 .footer_white_wrapper_logo {
@@ -1825,6 +1825,7 @@ footer {
 }
 
 .footer_geo {
+    position: absolute;
     background-color: #efeccb;
     border-radius: 25px;
     width: 170px;
@@ -1834,6 +1835,7 @@ footer {
     align-items: center;
     gap: 15px;
     margin-top: 68px;
+    top:20px;
 }
 
 .footer_geo img {
@@ -1856,7 +1858,6 @@ footer {
 }
 
 .footer_text_sub {
-    margin-top: 14px;
     font-weight: 400;
     font-size: 18px;
     color: #fff;
@@ -1881,6 +1882,8 @@ footer {
     text-decoration-skip-ink: none;
     color: #fff;
     line-height: 2rem;
+    grid-column: span 2;
+    max-width: 370px;
 }
 
 ._dropdown-menu {
