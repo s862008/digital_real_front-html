@@ -34,7 +34,7 @@
 
 </head>
 <body>
-<!--<iframe src="header.html" width="100%" id="myIframe"></iframe>-->
+
 <header id="header"></header>
 
 <main class="home-page">
@@ -48,7 +48,7 @@
                         ВЫБОР ЗА ТОБОЙ!
                     </div>
                     <div class="banner-info">
-                        Квартира в новостройке напрямую от застройщика <br> в Воронеже
+                    <a>  Квартира в новостройке напрямую от застройщика <br> в Воронеже</a>
                     </div>
                     <div class="banner__smart-part">
                         <a href="param_search.html">
@@ -140,19 +140,7 @@
                         </div>
                     </div>
                     <div class="extended-filter">
-                        <a href="param_search.html"><span> <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-  <path d="M22.5 7C22.5 10.0376 20.0376 12.5 17 12.5C13.9624 12.5 11.5 10.0376 11.5 7C11.5 3.96243 13.9624 1.5 17 1.5C20.0376 1.5 22.5 3.96243 22.5 7Z"
-        stroke="#174449" stroke-width="3"/>
-  <path d="M0 7H11.5" stroke="#174449" stroke-width="4"/>
-  <path d="M22.5 7L48 7" stroke="#174449" stroke-width="4"/>
-  <path d="M0 24H26.5" stroke="#174449" stroke-width="4"/>
-  <path d="M37 24H48" stroke="#174449" stroke-width="4"/>
-  <circle cx="18" cy="41" r="5.5" stroke="#174449" stroke-width="3"/>
-  <path d="M0 41H12" stroke="#174449" stroke-width="4"/>
-  <path d="M24 41H48" stroke="#174449" stroke-width="4"/>
-  <circle cx="32" cy="24" r="5.5" stroke="#174449" stroke-width="3"/>
-</svg></span>Расширенный поиск</a>
+                        <a href="param_search.html"><span><img src="img/filter_icon.svg" alt="icon"> </span>Расширенный поиск</a>
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-12 cards-side">
@@ -447,17 +435,10 @@
 </main>
 
 <footer id="footer"></footer>
-<!--<iframe src="footer.html" width="100%" height="800px"></iframe>-->
+</body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-<script>
-    fetch('header.html')
-        .then(response => response.text())
-        .then(html => document.getElementById('header').innerHTML = html);
-    fetch('footer.html')
-        .then(response => response.text())
-        .then(html => document.getElementById('footer').innerHTML = html);
-</script>
-</body>
+<script src="js/main.js"></script>
+
 </html>

@@ -33,7 +33,7 @@
     <![endif]-->
 </head>
 <body>
-<iframe src="header.html" width="100%" class="iframe-header-min" id="myIframe"></iframe>
+<header id="header"></header>
 <main class="apartment-page">
     <div class="wrapper-back-banner">
         <div class="container-main">
@@ -58,12 +58,12 @@
                                 <img src="./img/image%202.png" alt="picture">
                             </div>
 
-                            <div class="as__group-imgs d-flex gx-3 justify-content-between">
-                                <img class="p-2" src="./img/Group%2048.png" alt="picture">
-                                <img class="p-2" src="./img/Group%2048.png" alt="picture">
-                                <img class="p-2" src="./img/Group%2048.png" alt="picture">
-                                <img class="p-2" src="./img/Group%2048.png" alt="picture">
-                                <img class="p-2" src="./img/Group%2048.png" alt="picture">
+                            <div class="as__group-imgs ">
+                                <img class="p-2" id="pic-n1" src="./img/Group%2048.png" alt="picture" onclick="handleClick(1)">
+                                <img class="p-2" id="pic-n2" src="./img/Group%2048.png" alt="picture" onclick="handleClick(2)">
+                                <img class="p-2" id="pic-n3" src="./img/Group%2048.png" alt="picture" onclick="handleClick(3)">
+                                <img class="p-2" id="pic-n4" src="./img/Group%2048.png" alt="picture" onclick="handleClick(4)">
+                                <img class="p-2" id="pic-n5" src="./img/Group%2048.png" alt="picture" onclick="handleClick(5)">
                             </div>
                         </div>
                     </div>
@@ -298,9 +298,25 @@
 
 
 </main>
-<iframe src="footer.html" width="100%" height="800px"></iframe>
+<footer id="footer"></footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script>
+    function handleClick( item) {
+
+        let image = document.getElementById('pic-n'+item);
+        let main_img = document.querySelector('.as__main-img img');
+
+        let temp = image.src;
+        image.src = main_img.src;
+        main_img.src = temp;
+
+    }
+</script>
+
+
+
 </html>
