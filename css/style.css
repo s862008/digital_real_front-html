@@ -189,13 +189,13 @@ main {
 .gk-page {
     min-height: 500px;
 }
-
-/* ------------ HOME --------------*/
-
 .filter-page, .home-page {
     overflow: hidden;
     padding-top: 65px;
 }
+
+
+/* ------------ Header --------------*/
 
 .prepear-search {
     margin-top: 5%;
@@ -437,11 +437,13 @@ main {
 }
 
 
-/*.nav-a > span {*/
-/*    border: 2px solid #8c8c8c;*/
-/*    font-size: 28px;*/
-/*}*/
+/* ------------ HOME --------------*/
 
+.prepear-search {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding: 0 40px 0 100px;
+}
 .banner {
     background-color: #032f30;
     height: 563px;
@@ -659,7 +661,7 @@ main {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: #fffefe;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: #174449;
 }
 .my-select--smpl {
