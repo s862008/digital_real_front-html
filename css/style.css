@@ -289,6 +289,12 @@ main {
     margin-left: 40px;
     /*padding-left: 45px;*/
 }
+.personal span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+}
 
 .title-menu {
     padding: 0 0;
